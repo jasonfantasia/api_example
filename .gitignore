@@ -18,4 +18,3 @@
 
 # Ignore sensative files
 /config/database.yml
-/config/secrets.yml
