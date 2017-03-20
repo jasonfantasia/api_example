@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  post "sign_up", to: "authorization#sign_up"
+  post "generate_token", to: "authorization#generate_token"
+  delete "revoke_token", to: "authorization#revoke_token"
+
+  resources :widgets
 end

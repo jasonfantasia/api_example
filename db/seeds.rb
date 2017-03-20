@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(
+  name: "Jason Fantasia",
+  email: "jfantasia@carpentersfund.org",
+  password_digest: BCrypt::Password.create("abc123", cost: 5)
+)
+
+10.times.each do |i|
+  Widget.create(name: "Item #{i}")
+end
